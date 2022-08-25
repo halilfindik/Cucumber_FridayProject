@@ -1,17 +1,13 @@
 package StepDefinitions;
 
-import Pages.DialogContent;
-import Pages.FormContent;
-import Pages.LeftNav;
+import Pages.MainPage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 
 import java.util.List;
 
 public class _05_DataTableSteps {
-    LeftNav leftNav=new LeftNav();
-    DialogContent dialogContent=new DialogContent();
-    FormContent formContent=new FormContent();
+    /*MainPage mainPage =new MainPage();
     @And("Click on the element in the Left Navigation Panel")
     public void clickOnTheElementInTheLeftNavigationPanel(DataTable elements) {
         List<String> listElement = elements.asList(String.class);
@@ -27,7 +23,7 @@ public class _05_DataTableSteps {
         List<String> listElement = elements.asList(String.class);
 
         for (int i=0; i<listElement.size(); i++) {
-            dialogContent.findAndClick(listElement.get(i));
+            mainPage.findAndClick(listElement.get(i));
         }
     }
 
@@ -36,7 +32,7 @@ public class _05_DataTableSteps {
         List<List<String>> listElement = elements.asLists(String.class);
 
         for (int i=0; i<listElement.size(); i++) {
-            dialogContent.findAndSend(listElement.get(i).get(0),listElement.get(i).get(1));
+            mainPage.findAndSend(listElement.get(i).get(0),listElement.get(i).get(1));
         }
     }
 
@@ -44,7 +40,7 @@ public class _05_DataTableSteps {
     public void userDeletesItemFromDialog(DataTable elements) {
         List<String> listElement=elements.asList(String.class);
         for (int i=0; i<listElement.size(); i++) {
-            dialogContent.searchAndDelete(listElement.get(i));
+            mainPage.searchAndDelete(listElement.get(i));
         }
     }
 
@@ -55,5 +51,5 @@ public class _05_DataTableSteps {
         for (int i=0; i<listElement.size(); i++) {
             formContent.findAndClick(listElement.get(i));
         }
-    }
+    }*/
 }
