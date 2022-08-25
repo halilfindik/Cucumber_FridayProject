@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="456297d7-091d-4b42-97cd-148b39ccb5bd" name="Changes" comment="">
+    <list default="true" id="456297d7-091d-4b42-97cd-148b39ccb5bd" name="Changes" comment="commit revision">
+      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_03_AddAddressFunction.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_04_ProductPurchase.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_03_AddAddressStoryOutline.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_01_CreateAccountFunction.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_01_CreateAccountFunction.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_01_CreateAccountFunctionDataTable.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_01_CreateAccountFunctionDataTable.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_02_LoginFunction.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_02_LoginFunction.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_02_LoginFunctionDataTable.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_02_LoginFunctionDataTable.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_08_ScenarioOutlineDataTableFees.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_01_CreateAccountDataTableSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_01_CreateAccountDataTableSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Parent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_01_CreateAccountSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_01_CreateAccountSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_02_LoginFunctionDataTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_02_LoginFunctionDataTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_02_LoginFunctionSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_02_LoginFunctionSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_05_DataTableSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_05_DataTableSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Gwd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Gwd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_05_DataTableSteps.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +63,7 @@
       <recent name="Utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: _01_CreateAccountFunctionDataTable">
+  <component name="RunManager" selected="Cucumber Java.Feature: _03_AddAddressFunction">
     <configuration name="Feature: _01_CreateAccountFunction" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_01_CreateAccountFunction.feature" />
@@ -143,8 +140,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Feature: _03_AddAddressFunction" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_03_AddAddressFunction.feature" />
+      <option name="GLUE" value="StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Cucumber_FridayProject" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: _03_AddAddressFunction" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: _03_AddAddressFunction" />
         <item itemvalue="Cucumber Java.Feature: _01_CreateAccountFunctionDataTable" />
         <item itemvalue="Cucumber Java.Feature: _02_LoginFunctionDataTable" />
         <item itemvalue="Cucumber Java.Feature: _02_LoginFunction" />
@@ -161,6 +178,14 @@
       <option name="presentableId" value="Default" />
       <updated>1661447408722</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit revision">
+      <created>1661455938603</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661455938603</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,5 +198,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit revision" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit revision" />
   </component>
 </project>

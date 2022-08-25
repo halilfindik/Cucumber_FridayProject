@@ -5,7 +5,9 @@ import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -40,6 +42,8 @@ public class Parent {
         js.executeScript("arguments[0].scrollIntoView();",element);
     }
 
+
+
     public void waitUntilClickable(WebElement element) {
         WebDriverWait wait = new WebDriverWait(Gwd.getDriver(), dr);
         wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -53,5 +57,18 @@ public class Parent {
         WebDriverWait wait = new WebDriverWait(Gwd.driver,dr);
         By fuseBar=By.cssSelector("fuse-progress-bar > *");
         wait.until(ExpectedConditions.numberOfElementsToBe(fuseBar,0));
+    }
+
+    public void findAndSelectFunction(WebElement element, String text) {
+        waitUntilClickable(element);
+        Select elementSelect=new Select(element);
+        elementSelect.selectByVisibleText(text);
+    }
+    public void findAndHoverFunction(WebElement element)
+    {
+        waitUntilClickable(element);
+        scrollToElement(element);
+        Actions actions=new Actions(Gwd.driver);
+        actions.moveToElement(element).perform();
     }
 }

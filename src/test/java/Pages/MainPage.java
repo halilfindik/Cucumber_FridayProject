@@ -50,6 +50,48 @@ public class MainPage extends Parent {
     @FindBy(xpath = "(//span[contains(text(),'Welcome')])[1]")
     private WebElement loginSuccessMessage;
 
+    //@FindBy(xpath = "(//*[@data-action='customer-menu-toggle'])[1]")
+    @FindBy(xpath = "(//span//button)[1]")
+    private WebElement arrow;
+
+    @FindBy(linkText = "My Account")
+    private WebElement myAccountLink;
+
+    @FindBy(linkText = "Manage Addresses")
+    private WebElement manageAddresses;
+
+    @FindBy(xpath = "//span[contains(text(),'Add New Add')]")
+    private WebElement addNewAddress;
+
+    @FindBy(id = "street_1")
+    private WebElement street1;
+
+    @FindBy(id = "telephone")
+    private WebElement telephone;
+
+    @FindBy(id = "city")
+    private WebElement city;
+
+    //@FindBy(id = "region_id")
+    //private WebElement regionSelect;
+
+    @FindBy(id = "zip")
+    private WebElement zipCode;
+
+    @FindBy(id = "country")
+    private WebElement countrySelect;
+
+    @FindBy(xpath = "//span[contains(text(),'Save')]")
+    private WebElement saveAddress;
+
+    @FindBy(xpath = "//div[contains(text(),'You saved')]")
+    private WebElement addressSaveSuccess;
+
+    @FindBy(xpath = "(//li[@class='product-item'])[6]")
+    private WebElement backpack;
+
+    @FindBy(xpath = "(//button[@title='Add to Cart'])[6]")
+    private WebElement addToCart;
 
     WebElement myElement;
     public void findAndSend(String strElement, String value) {
@@ -62,6 +104,10 @@ public class MainPage extends Parent {
             case "passConfirmInput"          : myElement=passConfirmInput; break;
             case "email"                     : myElement=email; break;
             case "pass"                      : myElement=password; break;
+            case "street1"                   : myElement=street1; break;
+            case "telephone"                 : myElement=telephone; break;
+            case "city"                      : myElement=city; break;
+            case "zipCode"                   : myElement=zipCode; break;
         }
         sendKeysFunction(myElement, value);
     }
@@ -73,6 +119,12 @@ public class MainPage extends Parent {
             case "createAccountButton"  : myElement=createAccountButton; break;
             case "signInLink"           : myElement=signInLink; break;
             case "signInButton"         : myElement=signInButton; break;
+            case "myAccountLink"        : myElement=myAccountLink; break;
+            case "manageAddresses"      : myElement=manageAddresses; break;
+            case "saveAddress"          : myElement=saveAddress; break;
+            case "arrow"                : myElement=arrow; break;
+            case "addNewAddress"        : myElement=addNewAddress; break;
+            case "addToCart"            : myElement=addToCart; break;
         }
         clickFunction(myElement);
     }
@@ -81,7 +133,7 @@ public class MainPage extends Parent {
         {
             case "accountSuccess"                : myElement = accountSuccess; break;
             case "loginSuccessMessage"           : myElement=loginSuccessMessage; break;
-
+            case "addressSaveSuccess"            : myElement=addressSaveSuccess; break;
         }
         verifyContainsText(myElement, text);
     }
@@ -94,4 +146,21 @@ public class MainPage extends Parent {
         findAndClick("deleteButton"); // silme butonuna bas
         findAndClick("deleteDialogButton"); // silmeyi onayla
     }
+
+    public void findAndSelect(String strElement, String text) {
+        switch (strElement)
+        {
+            case "countrySelect" : myElement = countrySelect; break;
+        }
+        findAndSelectFunction(myElement, text);
+    }
+
+    public void findAndHover(String strElement) {
+        switch (strElement)
+        {
+            case "backpack"     : myElement=backpack; break;
+        }
+        findAndHoverFunction(myElement);
+    }
+
 }

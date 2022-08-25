@@ -5,7 +5,7 @@ Feature: Create Account Functionality with DataTable
     When Signup a new user with DataTable
       | usernameInput    | Horasanli               |
       | lastnameInput    | Hasanim                 |
-      | emailInput       | horansanlim2@gmail.com  |
+      | emailInput       | horansanlim4@gmail.com  |
       | passwordInput    | UWmA6ZAaZ9WqjWS         |
       | passConfirmInput | UWmA6ZAaZ9WqjWS         |
 

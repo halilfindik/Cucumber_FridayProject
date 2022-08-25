@@ -20,7 +20,7 @@ public class _01_CreateAccountSteps {
         mainPage.findAndClick("createAccountLink");
         mainPage.findAndSend("usernameInput","Horasanlı");
         mainPage.findAndSend("lastnameInput","Hasan");
-        mainPage.findAndSend("emailInput","horansanlim@gmail.com");
+        mainPage.findAndSend("emailInput","horansanlim5@gmail.com");
         mainPage.findAndSend("passwordInput","UWmA6ZAaZ9WqjWS");
         mainPage.findAndSend("passConfirmInput","UWmA6ZAaZ9WqjWS");
         mainPage.findAndClick("createAccountButton");
