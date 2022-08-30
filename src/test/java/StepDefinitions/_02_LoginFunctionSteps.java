@@ -9,7 +9,7 @@ public class _02_LoginFunctionSteps {
     @When("User logins with valid credentials")
     public void userLoginsWithValidCredentials() {
         mainPage.findAndClick("signInLink");
-        mainPage.findAndSend("email","horansanlim@gmail.com");
+        mainPage.findAndSend("email","horansanlim4@gmail.com");
         mainPage.findAndSend("pass","UWmA6ZAaZ9WqjWS");
         mainPage.findAndClick("signInButton");
     }

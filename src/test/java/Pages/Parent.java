@@ -25,11 +25,12 @@ public class Parent {
     {
         waitUntilClickable(element);
         scrollToElement(element);
+        waitUntilLoading();
         element.click();
     }
     public void waitUntilVisible(WebElement element) {
         /*try {
-            Thread.sleep(500);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }*/
@@ -45,6 +46,11 @@ public class Parent {
 
 
     public void waitUntilClickable(WebElement element) {
+        /*try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }*/
         WebDriverWait wait = new WebDriverWait(Gwd.getDriver(), dr);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
@@ -55,8 +61,14 @@ public class Parent {
     }
     public void waitUntilLoading() {
         WebDriverWait wait = new WebDriverWait(Gwd.driver,dr);
-        By fuseBar=By.cssSelector("fuse-progress-bar > *");
+        By fuseBar=By.cssSelector("[style='display: true;']");
         wait.until(ExpectedConditions.numberOfElementsToBe(fuseBar,0));
+    }
+
+    public void waitUntilInvisible() {
+        WebDriverWait wait = new WebDriverWait(Gwd.driver,dr);
+        By loadingMask=By.cssSelector("[style='display: true;']");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingMask));
     }
 
     public void findAndSelectFunction(WebElement element, String text) {
@@ -71,4 +83,6 @@ public class Parent {
         Actions actions=new Actions(Gwd.driver);
         actions.moveToElement(element).perform();
     }
+
+
 }

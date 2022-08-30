@@ -4,5 +4,6 @@ Feature: Product Purchase Functionality
     Given Navigate to Luma
     And User logins with valid credentials
     When User adds a product to cart
-    And User
+    Then User should successfully add product to cart
+    And User buys the product
     Then Verify the purchase
